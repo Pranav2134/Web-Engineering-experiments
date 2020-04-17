@@ -1,0 +1,97 @@
+<html>
+	<head>
+	<title>EXAM</title>
+	<script language="javascript">
+		function exam(form){
+			var i=0;
+			if(form.one[0].checked)
+				i=i+1;
+			if(form.three[1].checked)
+				i=i+1;
+			if(form.four[1].checked)
+				i=i+1
+			if(form.five[1].checked)
+				i=i+1
+			window.alert("Thank You for taking Online Exam! Your Score is: "+i)
+		}
+	</script>
+
+	</head>
+	<body bgcolor="magenta">
+	<form onsubmit="exam(this)">
+		<center><h1><blink>WELCOME TO THE ONLINE PYTHON EXAMINATION FORM</blink></h1></center>
+		<P>
+			<h1>
+				1) what is the output of the following code
+					r = lambda q: q * 2
+					s = lambda q: q * 3
+					x = 2
+					x = r(x) 
+					x = s(x) 
+					x = r(x) 
+					print x 
+			</h1>
+			<input type="radio" name="one" value="24">
+			<label>24</label>
+			<input type="radio" name="one" value="30">
+			<label>30</label>
+			<input type="radio" name="one" value="21">
+			<label>21</label>
+			<input type="radio" name="one" value="13">
+			<label>13</label>
+		</P>
+		<p>
+			<h1>
+				2) What is the output of the following code
+					a=4.5
+					b=2
+					print a//b
+			</h1>
+			<input type="radio" name="three" value="2">
+			<label>2</label>
+			<input type="radio" name="three" value="2.0">
+			<label>2.0</label>
+			<input type="radio" name="three" value="2.25">
+			<label>2.25</label>
+			<input type="radio" name="three" value="2.5">
+			<label>2.5</label>
+		</p>
+		<p>
+			<h1>
+				3) what is the output of the following code
+					nameList=['harsh','pratik','bob','dhruv']
+					print nameList[1][-1]
+			</h1>
+			<input type="radio" name="four" value="a">
+			<label>a</label>
+			<input type="radio" name="four" value="k">
+			<label>k</label>
+			<input type="radio" name="four" value="m">
+			<label>m</label>
+			<input type="radio" name="four" value="p">
+			<label>p</label>
+		</p>
+		<p>
+			<h1>
+				4) What is the Ouptut of the following code
+
+					code=[1,2,3,4]
+					code.append([5,6,7,8])
+					print len(code)
+			</h1>
+			<input type="radio" name="five" value="8">
+			<label>8</label>
+			<input type="radio" name="five" value="5">
+			<label>5</label>
+			<input type="radio" name="five" value="4">
+			<label>4</label>
+			<input type="radio" name="five" value="6">
+			<label>6</label>
+		</p>
+		<p><center>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</center></p>
+
+	</body>
+</html>
